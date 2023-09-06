@@ -1,1 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
+body {
+  font-family: "Righteous", cursive;
+  background-image: url(./imgs/headerBackgroundImag.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.todocontainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.todo-header {
+  display: flex;
+}
+
+.refresh-icon {
+  border-style: none;
+  height: 25px;
+  background-color: rgb(255, 247, 232);
+}
+
+.header-h1 {
+  color: rgb(80, 80, 92);
+  font-size: 55px;
+  text-decoration: underline;
+}
+
+.todolist {
+  height: clamp(250px, 100%, 10000px);
+  width: 640px;
+  text-align: start;
+  align-items: center;
+  filter: drop-shadow(0 0 0.75rem rgb(71, 71, 71));
+}
+
+.list-p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-width: 3px;
+  width: 95.3%;
+  background-color: rgb(255, 247, 232);
+  padding: 15px;
+  border-color: rgba(128, 128, 128, 0.336);
+  margin: 0;
+}
+
+#input-text {
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-width: 3px;
+  width: 95.3%;
+  background-color: wheat;
+  padding: 15px;
+  border-color: rgba(128, 128, 128, 0.336);
+}
+
+.todotask {
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-width: 3px;
+  background-color: wheat;
+  padding: 15px;
+  border-color: rgba(128, 128, 128, 0.336);
+}
+
+.clear-btn {
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-width: 3px;
+  width: 100%;
+  background-color: rgb(243, 243, 243);
+  padding: 15px;
+  border-color: rgba(128, 128, 128, 0.336);
+  margin: 0;
+  font-family: "Righteous", cursive;
+  font-size: 15px;
+}
+
+.clear-btn:hover {
+  background-color: azure;
+}
+
+.clear-btn:active {
+  background-color: gray;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-family: "Righteous", cursive;
+    background-image: url(./imgs/headerBackgroundImag.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400%;
+  }
+
+  .header-h1 {
+    font-size: 35px;
+  }
+
+  .todolist {
+    height: clamp(250px, 100%, 10000px);
+    width: 340px;
+    text-align: start;
+    align-items: center;
+    filter: drop-shadow(0 0 0.75rem rgb(71, 71, 71));
+  }
+
+  .list-p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 3px;
+    width: 91.3%;
+    background-color: rgb(255, 247, 232);
+    padding: 15px;
+    border-color: rgba(128, 128, 128, 0.336);
+    margin: 0;
+  }
+
+  #input-text {
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 3px;
+    width: 91.2%;
+    background-color: wheat;
+    padding: 15px;
+    border-color: rgba(128, 128, 128, 0.336);
+  }
+}
