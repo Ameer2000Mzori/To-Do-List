@@ -43,11 +43,14 @@ function populateHTML() {
       const deleteImage = div.querySelector('.delete-img');
       deleteImage.addEventListener('click', handleRemoveTodo);
 
+      // Add an event listener to the label to enable text editing
+      const labelText = div.querySelector('.label-text');
+      labelText.addEventListener('dblclick', handleLabelDoubleClick);
+
       todoTask.appendChild(div);
 
       // Apply text-decoration if the task is checked
       if (toDoObject[key].checked) {
-        const labelText = div.querySelector('.label-text');
         labelText.style.textDecoration = 'line-through';
       }
 
@@ -138,4 +141,32 @@ function renumberTodos() {
     }
   }
   updateLocalStorage();
+}
+
+// Function to handle label double-click for text editing
+function handleLabelDoubleClick(event) {
+  const labelText = event.target;
+  const key = labelText.getAttribute('for');
+
+  // Create an input element for editing the text
+  const inputElement = document.createElement('input');
+  inputElement.type = 'text';
+  inputElement.value = labelText.textContent;
+
+  // Replace the label with the input element
+  labelText.parentNode.replaceChild(inputElement, labelText);
+
+  // Add an event listener to save the edited text on input blur (focus out)
+  inputElement.addEventListener('blur', () => {
+    const updatedText = inputElement.value;
+    toDoObject[key].todo = updatedText;
+    updateLocalStorage();
+    labelText.textContent = updatedText;
+
+    // Remove the input element and restore the label
+    inputElement.parentNode.replaceChild(labelText, inputElement);
+  });
+
+  // Focus on the input element for immediate editing
+  inputElement.focus();
 }
