@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  <script defer src="bundle.js"></script></head>
   <body>
     <div class="todocontainer">
       <h1 class="header-h1">TO DO LIST</h1>
@@ -18,32 +18,20 @@
 
           <form class="form-list" action="">
             <div>
+              <button id="add-button" class="add-btn">
+                <img class="add-img" src="./icons/add.png" alt="" />
+              </button>
               <input
                 id="input-text"
                 type="text"
                 placeholder="Add to your list..."
               />
             </div>
-
-            <div class="todotask">
-              <input type="checkbox" />
-              <label for="list" aria-checked="true">fix car</label>
-            </div>
-            <div class="todotask">
-              <input type="checkbox" />
-              <label for="list" aria-checked="true">create new car</label>
-            </div>
-            <div class="todotask">
-              <input type="checkbox" />
-              <label for="list" aria-checked="true"
-                >wash my car with my cousin
-              </label>
-            </div>
+            <div class="todotask-wrap"></div>
             <button class="clear-btn">Clear All Completed</button>
           </form>
         </div>
       </div>
     </div>
-    <script src="./dist/main.js"></script>
   </body>
 </html>

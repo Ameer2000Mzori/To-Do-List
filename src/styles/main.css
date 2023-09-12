@@ -2,7 +2,8 @@
 
 body {
   font-family: "Righteous", cursive;
-  background-image: url(./imgs/headerBackgroundImag.png);
+  background-image: url(/dist/imgs/headerBackgroundImag.png);
+  background-color: antiquewhite;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -56,6 +57,24 @@ body {
   margin: 0;
 }
 
+.add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: transparent;
+  border: none;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 4.5rem;
+  right: 1rem;
+}
+
+.add-img {
+  height: 20px;
+  width: 20px;
+}
+
 #input-text {
   border-style: solid;
   border-top: none;
@@ -68,7 +87,13 @@ body {
   border-color: rgba(128, 128, 128, 0.336);
 }
 
+.label-text.active {
+  text-decoration: line-through;
+}
+
 .todotask {
+  display: flex;
+  align-items: start;
   border-style: solid;
   border-top: none;
   border-left: none;
@@ -77,6 +102,27 @@ body {
   background-color: wheat;
   padding: 15px;
   border-color: rgba(128, 128, 128, 0.336);
+}
+
+.input-checkbox {
+  margin: 1px;
+}
+
+.delete-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  right: 1rem;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border-style: none;
+}
+
+.delete-img {
+  height: 20px;
 }
 
 .clear-btn {
@@ -105,7 +151,6 @@ body {
 @media (max-width: 768px) {
   body {
     font-family: "Righteous", cursive;
-    background-image: url(./imgs/headerBackgroundImag.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 400%;
