@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    mode : "development",
+    mode : "production",
     entry :path.resolve(__dirname,"src/script.js"),
     output:{
         path: path.resolve(__dirname,"dist"),
