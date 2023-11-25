@@ -16,9 +16,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 My Portafolio <a name="about-project"></a>
+# 📖 To-Do-List <a name="about-project"></a>
 
-> This is my website portfolio, made with HTML, CSS, and JavaScript. and it's a multi-page responsive website. it's a whole website made for desktop and mobile versions.
+> The To-Do-List website is built with HTML, CSS, and JavaScript. Employing linters to ensure clean code and overcome potential errors, the project also utilizes local storage to persist data. Don't forget to check out the live demo for a hands-on experience!
 
 ## 🛠 Built With <a name="built-with"></a>
 
