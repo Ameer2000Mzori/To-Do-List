@@ -16,9 +16,14 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 To-Do-List <a name="about-project"></a>
+# 📖 About This Project <a name="about-project"></a>
 
 > The To-Do-List website is built with HTML, CSS, and JavaScript. Employing linters to ensure clean code and overcome potential errors, the project also utilizes local storage to persist data. Don't forget to check out the live demo for a hands-on experience!
+
+# Sample Of Website <a name="Sample-Of-Website"></a>
+
+![alt text](./sample/1.png)
+![alt text](./sample/2.png)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -27,10 +32,10 @@
 <details>
   <summary>Client</summary>
   <ul>
-        <li><a href="https://en.wikipedia.org/wiki/HTML">Html</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/CSS">Css</a></li>
-        <li><a href="https://nl.wikipedia.org/wiki/JavaScript">Javascript</a></li>
-    
+  <li><a href="https://en.wikipedia.org/wiki/HTML">Html</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/CSS">Css</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/JavaScript">Javascript</a></li>
+  <li><a href="https://stylelint.io/">Html/CSS Linters</a></li>
   </ul>
 </details>
 
@@ -39,7 +44,8 @@
 ### Key Features <a name="key-features"></a>
 
 - **[multi-page responsive website]**
-- **[flex & grid]**
+- **[Linters ]**
+- **[Clean Code]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -49,7 +55,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://ameer2000mzori.github.io/ToDoList/dist/)
+- [Live Demo Link](https://ameer2000mzori.github.io/To-Do-List/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,8 +91,6 @@ If you like this project, don't hesitate to give it a star 😊.
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank Microverse team for the resources.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
